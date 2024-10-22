@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WoNoMute Young Synth</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://raw.githubusercontent.com/wonomuteYoung/workshops/refs/heads/main/Ai.webp');
+            background-size: cover;
+            color: white;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        button {
+            background-color: #61dafb;
+            border: none;
+            padding: 20px;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            background-color: #21a1f1;
+        }
+
+        .btn-tone1 { background-color: #FF6B6B; }
+        .btn-tone2 { background-color: #FFB86B; }
+        .btn-tone3 { background-color: #FFFC6B; }
+        .btn-tone4 { background-color: #6BFF6B; }
+        .btn-tone5 { background-color: #6BFFF5; }
+        .btn-tone6 { background-color: #6B86FF; }
+        .btn-tone7 { background-color: #C86BFF; }
+        .btn-tone8 { background-color: #FF6BFF; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WoNoMute Young Synth</h1>
+        <p>Press the buttons or use the keys to play different tones!</p>
+        <div class="button-grid">
+            <button class="btn-tone1" data-note="C4">C4</button>
+            <button class="btn-tone2" data-note="D4">D4</button>
+            <button class="btn-tone3" data-note="E4">E4</button>
+            <button class="btn-tone4" data-note="F4">F4</button>
+            <button class="btn-tone5" data-note="G4">G4</button>
+            <button class="btn-tone6" data-note="A4">A4</button>
+            <button class="btn-tone7" data-note="B4">B4</button>
+            <button class="btn-tone8" data-note="C5">C5</button>
+        </div>
+    </div>
+
+    <!-- Import Tone.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.37/Tone.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
 
